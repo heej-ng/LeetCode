@@ -11,11 +11,11 @@ class Solution:
         print(input)
 
 
-        listlen = len(input)
-        half = listlen/2
+        #listlen = len(input)
+        half = len(input)/2
         i = 0
         while(i < half):
-            if input[i] != input[listlen - i - 1]:
+            if input[i] != input[len(input) - i - 1]:
                 return False
             i += 1
         

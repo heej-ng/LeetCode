@@ -19,5 +19,4 @@ class Solution:
             ptr.next = list1
         elif list2 != None:
             ptr.next = list2
-            
         return out.next

@@ -1,7 +1,6 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
-        res = True
         for value in s:
             if value == "(":
                 stack.append(value)

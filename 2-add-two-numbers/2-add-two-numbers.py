@@ -8,8 +8,6 @@ class Solution:
         ptr = out = ListNode(0)
         carry = 0
         while l1 and l2:
-            print("l1",l1)
-            print("l2",l2)
             temp = l1.val + l2.val + carry
             carry = 0
             if temp >= 10:

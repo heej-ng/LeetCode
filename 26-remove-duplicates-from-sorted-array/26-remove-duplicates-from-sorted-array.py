@@ -1,6 +1,6 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        if len(nums) == 0:
+        if nums == []:
             return 0
         pre = nums[0]
         k = 1

@@ -14,11 +14,11 @@ class Solution:
                 break
             if nums1[0] <= nums2[0]:    # nums1 < nums2
                 array.append(nums1[0])
-                nums1.pop(0)    # del nums1[0]
+                del nums1[0]
                 i += 1
             elif nums1[0] > nums2[0]:   # nums2 < nums1
                 array.append(nums2[0])
-                nums2.pop(0)    # del nums2[0]
+                del nums2[0]
                 j += 1
         array += nums1
         array += nums2

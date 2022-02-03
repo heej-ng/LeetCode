@@ -4,7 +4,7 @@ class Solution:
         length = n+m
         median = length/2
         median_i = length//2
-        #print(median*10%10) # 나머지가 5일시 length 홀수, 0일시 length 짝수
+        # print(median*10%10) # 나머지가 5일시 length 홀수, 0일시 length 짝수
         # 길이 4일때 median : 2,    중간값 인덱스는 (0 ~ 3) 중에 (1,2)
         # 길이 5일때 median : 2.5,  중간값 인덱스는 (0 ~ 4) 중에 (2)
         i,j = 0,0

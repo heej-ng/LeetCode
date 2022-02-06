@@ -17,4 +17,4 @@ class Solution:
                 dic[nums[i]] = 1
                 i += 1
                 k += 1
-        return k
+        return i

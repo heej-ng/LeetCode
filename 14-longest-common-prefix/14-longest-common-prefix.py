@@ -11,6 +11,7 @@ class Solution:
                 if pre[j] != strs[i][j]:  # 다른 부분 시작
                     common = pre[0:j]
                     break
+                    
                 elif j == minlen-1:       # minlen 길이까지 같은 경우
                     common = pre[0:minlen]
             pre = common

@@ -10,11 +10,8 @@ class Solution:
             list = []
             for j in digit:     # j : (d or e or f)
                 for k in range(len(result)):
-                    # list2 = []
                     temp = result[k]
                     temp += j
-                    # list2.append(temp)
                     list.append(temp)
-                    # list += list2
             result = list
         return result

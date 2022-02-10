@@ -13,5 +13,6 @@ class Solution:
                     temp = result[k]
                     temp += j
                     list.append(temp)
+                    
             result = list
         return result

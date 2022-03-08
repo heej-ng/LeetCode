@@ -10,7 +10,6 @@ class Solution:
         while ptr:
             total_cnt += 1
             ptr = ptr.next
-        print(total_cnt)
         cnt = total_cnt - n
         
         if cnt == 0:
@@ -19,7 +18,6 @@ class Solution:
         ptr = head
         while ptr:
             if cnt == 1:
-                print(ptr)
                 temp = ptr.next.next
                 ptr.next = temp
                 break

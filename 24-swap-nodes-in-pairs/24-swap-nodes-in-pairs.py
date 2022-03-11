@@ -9,7 +9,6 @@ class Solution:
             return head
         ptr = head
         result = head.next
-        
         while ptr.next != None: # ptr 다음 null 일때까지
             if ptr.next.next == None or ptr.next.next.next == None:
                 temp = ptr.next

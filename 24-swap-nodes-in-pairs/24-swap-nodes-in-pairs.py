@@ -16,12 +16,10 @@ class Solution:
                 ptr.next = temp.next
                 temp.next = ptr
                 break
-            
             else:
                 temp = ptr.next         #2
                 first = temp.next       #3
                 temp.next = ptr         
                 ptr.next = first.next
                 ptr=first
-
         return result

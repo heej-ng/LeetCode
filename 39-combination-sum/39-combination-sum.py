@@ -14,5 +14,4 @@ class Solution:
                 dfs(temp+[candidates[i]], value+candidates[i], i)
                 
         dfs([], 0, 0)
-        
         return result

@@ -11,9 +11,9 @@ class Solution:
                 return
             
             for i in range(start, len(candidates)):
-                temp.append(candidates[i])
-                dfs(temp, value+candidates[i], i)
-                temp.pop()
+                # temp.append(candidates[i])
+                dfs(temp+[candidates[i]], value+candidates[i], i)
+                # temp.pop()
                 
         dfs([], 0, 0)
         

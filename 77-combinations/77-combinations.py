@@ -8,7 +8,6 @@ class Solution:
                 result.append(element[:])
                 return
             
-            
             for i in range(start, n+1): # start ~ n
                 element.append(i)
                 dfs(element, i+1, k-1)

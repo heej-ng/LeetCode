@@ -4,7 +4,6 @@ class Solution:
         storage = []
         
         def dfs(element):
-            print(element)
             if len(element) == 0:
                 result.append(storage[:])
             

@@ -2,21 +2,14 @@ class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         result = []
         
-        def dfs(element, start: int):
-            if start == len(nums):
-                return
-            
-            
+        def dfs(start: int, element):
+
+            result.append(element)
             
             for i in range(start, len(nums)):
                 temp = element+[nums[i]]
-                print("i : "+str(i))
-                print(temp)
-                result.append(temp[:])
+                # result.append(temp[:])
+                dfs(i+1, temp)
                 
-                dfs(temp, i+1)
-                
-                
-        dfs([],0)
-        result.append([])
+        dfs(0,[])
         return result

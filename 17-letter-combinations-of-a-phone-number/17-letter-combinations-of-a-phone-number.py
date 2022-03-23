@@ -13,7 +13,7 @@ class Solution:
             for i in dic[digits[0]]: # a b c
                 element += i
                 dfs(element, digits[1:])
-                element = element[:-1]
+                element = element[:len(element)-1]
                 
         dfs("", digits)
         return result

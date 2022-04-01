@@ -3,14 +3,14 @@ class Solution:
         result = []
         storage = []
         
-        def dfs(element):
-            if len(element) == 0:
+        def dfs(elements):
+            if len(elements) == 0:
                 result.append(storage[:])
                 
-            for e in element:
+            for e in elements:
                 storage.append(e)
                 
-                next_element = element[:]
+                next_element = elements[:]
                 next_element.remove(e)
                 
                 dfs(next_element)

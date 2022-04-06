@@ -12,14 +12,10 @@ class Solution:
             dfs(i, j+1)
             dfs(i-1, j)
             dfs(i, j-1)
-            
-            
-            
                     
         for i in range(len(grid)):
             for j in range(len(grid[0])):
                 if grid[i][j] == "1":
                     dfs(i, j)
-                    count += 1
-                    
+                    count += 1       
         return count
